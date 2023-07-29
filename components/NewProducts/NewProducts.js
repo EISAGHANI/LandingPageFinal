@@ -10,6 +10,7 @@ import { useText } from '~/theme/common';
 import Title from '../Title';
 import ProductRattingCard from '../Cards/ProductRatting';
 import useStyles from './new-products-style';
+import backgroundImage from '~/public/images/Slide2.png';
 
 function NewProducts() {
   const { classes } = useStyles();
@@ -22,7 +23,7 @@ function NewProducts() {
   return (
     <div className={classes.root}>
       <Container fixed={isDesktop}>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <Grid item md={3} xs={12}>
             <Title primary="New" secondary="Arrivals" align={isMobile ? 'center' : 'left'} />
             <Typography className={text.paragrpah}>

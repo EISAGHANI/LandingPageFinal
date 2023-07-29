@@ -91,7 +91,7 @@ function Banner() {
         {!play || isMobile ? <img src={imgAPI.fashion[0]} alt="cover" /> : null}
         {yt.use && !isMobile && (
           <YouTube
-            videoId="FwdLDL-6QNg"
+            videoId="DxIDKZHW3-E"
             opts={opts}
             onReady={_onReady}
             onEnd={_onEnd}
@@ -108,7 +108,7 @@ function Banner() {
             <Typography variant="h6" className={text.subtitle}>
               {t('fashion-landing.banner_title')}
             </Typography>
-            <Typography variant="h2" className={text.title}>#BEanICON</Typography>
+            <Typography variant="h2" className={text.title}>#ButFirstMe</Typography>
             <IconButton
               className={classes.arrow}
               component={LinkBtn}

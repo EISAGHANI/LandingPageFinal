@@ -12,7 +12,7 @@ import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
 import Settings from './Settings';
 import MobileMenu from './MobileMenu';
-import logo from '~/public/images/fashion-logo.svg';
+import logo from '~/public/images/main-BFM-logo.svg';
 import linkRouter from '~/public/text/link';
 import useStyles from './header-style';
 import navMenu from './menu';

@@ -140,4 +140,4 @@ export default Landing;
 
 // Use this below for Static Site Generation (SSG)
 const getStaticProps = makeStaticProps(['common']);
-export { getStaticPaths, getStaticP
+export { getStaticPaths, getStaticProps };

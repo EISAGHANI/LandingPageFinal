@@ -77,8 +77,8 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
       backdropFilter: 'saturate(180%) blur(20px)',
       [`& .${classes.logo}`]: {
         '& img': {
-          height: 48,
-          width: 48,
+          height: 98,
+          width: 200,
           marginBottom: 0,
         },
       },
@@ -137,7 +137,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
       margin: '0 auto',
       transition: 'all 0.3s ease-out',
       marginBottom: theme.spacing(),
-      width: 64,
+      width: 200,
       height: 64,
       [theme.breakpoints.down('sm')]: {
         height: 48,
