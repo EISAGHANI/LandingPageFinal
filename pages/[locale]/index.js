@@ -22,6 +22,7 @@ import Blog from '~/components/Blog';
 import Feature from '~/components/Feature';
 import Footer from '~/components/Footer';
 import PageNav from '~/components/PageNav';
+import Benefit from '~/components/NewSlide/NewSlide1';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
@@ -96,6 +97,9 @@ function Landing(props) {
           </section>
           <section id="all-new" className={classes.spaceTop}>
             <NewProducts />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <Benefit />
           </section>
           <section id="trending" className={classes.spaceTop}>
             <Trending />

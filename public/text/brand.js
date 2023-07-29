@@ -1,13 +1,13 @@
 module.exports = {
   fashion: {
-    name: 'Fashion',
-    desc: 'Luxiren Fashion - React Single Landing Page Template',
-    prefix: 'luxiren',
-    footerText: 'Luxiren Theme 2021',
-    logoText: 'Luxiren Fashion',
-    projectName: 'Fashion',
-    url: 'luxireact.ux-maestro.com/fashion',
-    img: '/static/images/fashion-logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
+    name: 'But First Me',
+    desc: 'Mental Health and Wellness',
+    prefix: 'ButFirstMe',
+    footerText: 'But First Me 2023',
+    logoText: 'But First Me',
+    projectName: 'BFM',
+    url: 'ButFirstMe.de',
+    img: '/static/images/main-BFM-logo.png',
+    notifMsg: 'Contact us Directly for any assistance.'
   }
 };
