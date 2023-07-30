@@ -29,7 +29,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   fashion: [
-    'https://via.placeholder.com/1280x854/000000/FFFFFF',
+    'https://www.simpleimageresizer.com/_uploads/photos/06f35140/Slide1_1280x854.png',
     'https://via.placeholder.com/700x522/9fa5ad/FFFFFF',
     'https://via.placeholder.com/700x522/ada29f/FFFFFF',
     'https://via.placeholder.com/700x522/9fa5ad/FFFFFF',

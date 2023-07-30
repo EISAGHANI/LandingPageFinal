@@ -7,24 +7,30 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
     position: 'relative',
     background: theme.palette.common.black,
   },
+ 
   wrapper: {
     position: 'relative',
-    paddingTop: theme.spacing(10),
-    [theme.breakpoints.up('lg')]: {
-      paddingLeft: theme.spacing(8),
-      paddingRight: theme.spacing(8)
-    },
-    [theme.breakpoints.up('sm')]: {
-      paddingLeft: theme.spacing(4),
-      paddingRight: theme.spacing(4)
-    }
+    // paddingTop: theme.spacing(10),
+    // marginBottom: theme.spacing(70),
+    // marginTop: theme.spacing(0),
+    // width: '100%',
+    // [theme.breakpoints.up('lg')]: {
+    //   paddingLeft: theme.spacing(8),
+    //   paddingRight: theme.spacing(8)
+    // },
+    // [theme.breakpoints.up('sm')]: {
+    //   paddingLeft: theme.spacing(4),
+    //   paddingRight: theme.spacing(4)
+    // }
   },
   desc: {
-    padding: 0,
+    // padding: 0,
     color: theme.palette.common.white,
     '& h4': {
       fontWeight: theme.typography.fontWeightMedium
-    }
+    },
+    minHeight: '100px', // Set an appropriate minimum height value here
+    margin: 0 // Remove the gap by setting margin to 0
   },
   list: {
     display: 'block',

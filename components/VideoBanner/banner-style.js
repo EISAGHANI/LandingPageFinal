@@ -1,3 +1,4 @@
+import { yellow } from '@mui/material/colors';
 import { makeStyles } from 'tss-react/mui';
 
 const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) => ({
@@ -30,19 +31,19 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       }
     },
     '& iframe': {
-      width: '100%'
+      width: '100%',
     },
   },
-  overlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    background: theme.palette.common.black,
-    opacity: 0.5,
-    width: '100%',
-    height: '100%',
-    zIndex: 10
-  },
+  // overlay: {
+  //   position: 'absolute',
+  //   top: 0,
+  //   left: 0,
+  //   background: theme.palette.common.black,
+  //   opacity: 0.5,
+  //   width: '100%',
+  //   height: '100%',
+  //   zIndex: 10
+  // },
   caption: {
     position: 'absolute',
     width: '100%',
@@ -77,6 +78,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
     width: 80,
     height: 80,
     opacity: 0,
+    backgroundColor: yellow[700],
     transition: 'opacity 0.5s ease',
     border: '1px dashed #fff',
     '& i': {

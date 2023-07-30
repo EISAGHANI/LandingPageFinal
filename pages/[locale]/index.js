@@ -95,16 +95,16 @@ function Landing(props) {
               {/* <Promotions /> */}
             </div>
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          {/* <section id="all-new" className={classes.spaceTop}>
             <NewProducts />
-          </section>
+          </section> */}
           <section id="all-new" className={classes.spaceTop}>
             <Benefit />
           </section>
-          <section id="trending" className={classes.spaceTop}>
+          {/* <section id="trending" className={classes.spaceTop}>
             <Trending />
-          </section>
-          <section id="categories" className={classes.spaceTop}>
+          </section> */}
+          {/* <section id="categories" className={classes.spaceTop}>
             <Categories />
           </section>
           <section id="featured" className={classes.spaceTopShort}>
@@ -118,7 +118,7 @@ function Landing(props) {
           </section>
           <section id="feature" className={classes.spaceTopShort}>
             <Feature />
-          </section>
+          </section> */}
         </main>
         <section id="footer" className={classes.spaceTop}>
           <Footer />
