@@ -1,6 +1,6 @@
 import { makeStyles } from 'tss-react/mui';
-import decoBenefit from '~/public/images/Slide2.png';
-import decoList from '~/public/images/Slide2.png';
+import decoBenefit from '~/public/images/Slide1.png';
+import decoList from '~/public/images/Slide1.png';
 
 const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
   root: {

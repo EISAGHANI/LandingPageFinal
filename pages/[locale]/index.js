@@ -23,6 +23,14 @@ import Feature from '~/components/Feature';
 import Footer from '~/components/Footer';
 import PageNav from '~/components/PageNav';
 import Benefit from '~/components/NewSlide/NewSlide1';
+import NewSlide2 from '../../components/NewSlide2/NewSlide2';
+import NewSlide9 from '../../components/NewSlide9/NewSlide9';
+import NewSlide8 from '../../components/NewSlide8/NewSlide8';
+import NewSlide7 from '../../components/NewSlide7/NewSlide7';
+import NewSlide6 from '../../components/NewSlide6/NewSlide6';
+import NewSlide5 from '../../components/NewSlide5/NewSlide5';
+import NewSlide4 from '../../components/NewSlide4/NewSlide4';
+import NewSlide3 from '../../components/NewSlide3/NewSlide3';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
@@ -100,6 +108,30 @@ function Landing(props) {
           </section> */}
           <section id="all-new" className={classes.spaceTop}>
             <Benefit />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide2 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide3 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide4 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide5 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide6 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide7 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide8 />
+          </section>
+          <section id="all-new" className={classes.spaceTop}>
+            <NewSlide9 />
           </section>
           {/* <section id="trending" className={classes.spaceTop}>
             <Trending />
