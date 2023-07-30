@@ -64,9 +64,11 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
     height: '100%',
   },
   parallaxProps: {
-    background: `url(${decoBenefit}) no-repeat center center`,
-    height: 540,
-  }
+    background: `url(${decoBenefit}) no-repeat center`,
+    backgroundSize: 'cover',
+    height: 580,
+    width: '100%',
+  },
 }));
 
 // TODO jss-to-tss-react codemod: usages of this hook outside of this file will not be converted.
