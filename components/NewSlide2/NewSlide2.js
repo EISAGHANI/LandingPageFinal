@@ -43,7 +43,7 @@ function NewSlide2() {
           </Grid>
           <Grid container direction="column" justifyContent="center" alignItems="flex-end" rowSpacing={8}>
             <Grid item>
-              <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
+              <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER. Here are</Typography>
               <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '100%', height: '50vh' }} />
             </Grid>
 
