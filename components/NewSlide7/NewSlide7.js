@@ -32,7 +32,7 @@ function NewSlide7() {
           <div className={classes.parallaxProps} />
         </Parallax>
       </div>
-      <Container fixed={isDesktop}>
+      {/* <Container fixed={isDesktop}> */}
         <div className={classes.wrapper}>
           <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
             <Grid item>
@@ -52,7 +52,7 @@ function NewSlide7() {
             </Grid>
           </Grid>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }

@@ -11,6 +11,7 @@ import imgAPI from '~/public/images/imgAPI';
 import { useText , useTextAlign} from '~/theme/common';
 import useStyles from './benefit-style';
 import emailIconRed from '~/public/images/Email-red-outline.svg';
+import backgroundTextImage from '~/public/slide3/backgroundTextImage.svg';
 
 function NewSlide3() {
   const { classes } = useStyles();
@@ -32,27 +33,18 @@ function NewSlide3() {
           <div className={classes.parallaxProps} />
         </Parallax>
       </div>
-      <Container fixed={isDesktop}>
+      {/* <Container fixed={isDesktop}> */}
         <div className={classes.wrapper}>
-          <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
+          <Grid container direction="column" justifyContent="space-around" alignItems="center" rowSpacing={8}>
             <Grid item>
               <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
               <Typography className={text.subtitle2}> Von Uberall an jedem Ort.</Typography>
             </Grid>
-            <Grid item>
-              <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2} > JETZT KOSTENLOS ANMELDEN</Typography>
-              <Typography className={text.subtitle2} > UND 20% RABATT SICHERN!</Typography>
-            </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
-            <Grid item>
-              <Typography className={text.subtitle2}> But First Me - Weil du es wert bist.</Typography>
-              <Typography className={text.subtitle2}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
-              <Typography className={text.subtitle2}> Premium-Mitgliedschaft im ersten Monat!</Typography>
-            </Grid>
+            <Grid item sx={{backgroundImage: `url(${backgroundTextImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '100%', height: '60vh' }} />
+
           </Grid>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }
