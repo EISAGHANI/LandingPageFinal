@@ -34,22 +34,17 @@ function NewSlide8() {
       </div>
       {/* <Container fixed={isDesktop}> */}
         <div className={classes.wrapper}>
-          <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
+          <Grid container direction="row" justifyContent="space-evenly" alignItems="flex-end" rowSpacing={8}>
             <Grid item>
-              <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2}> Von Uberall an jedem Ort.</Typography>
-            </Grid>
-            <Grid item>
-              <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2} > JETZT KOSTENLOS ANMELDEN</Typography>
-              <Typography className={text.subtitle2} > UND 20% RABATT SICHERN!</Typography>
-            </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
-            <Grid item>
-              <Typography className={text.subtitle2}> But First Me - Weil du es wert bist.</Typography>
-              <Typography className={text.subtitle2}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
-              <Typography className={text.subtitle2}> Premium-Mitgliedschaft im ersten Monat!</Typography>
-            </Grid>
+              <Typography className={text.paragraph} sx={{ margin: 5}}> DEIN VIRTUELLER-MENTALTRAINER.Von Uberall an jedem Ort. DEIN VIRTUELLER-MENTALTRAINER.</Typography>
+              <Typography className={text.paragraph} sx={{ margin: 5}}> JETZT KOSTENLOS ANMELDEN UND 20% RABATT SICHERN!  But First Me - Weil du es wert bist.</Typography>
+              <Typography className={text.paragraph} sx={{ margin: 5}}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
+              <Typography className={text.paragraph} sx={{ margin: 5}}> Premium-Mitgliedschaft im ersten Monat!</Typography>
+              <Typography className={text.paragraph} sx={{ margin: 5}}> Premium-Mitgliedschaft im ersten Monat!</Typography>
+            </Grid>    
+          </Grid>
+          <Grid container direction="row" justifyContent="flex-start" alignItems="flex-end" rowSpacing={12} sx={{ margin: 5}}>
+              <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
           </Grid>
         </div>
       {/* </Container> */}
