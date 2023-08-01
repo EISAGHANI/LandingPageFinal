@@ -35,13 +35,12 @@ function NewSlide3() {
       </div>
       {/* <Container fixed={isDesktop}> */}
         <div className={classes.wrapper}>
-          <Grid container direction="column" justifyContent="space-around" alignItems="center" rowSpacing={8}>
-            <Grid item>
+          <Grid container direction="row" justifyContent="space-around" alignItems="stretch" rowSpacing={8}>
+            <Grid item >
               <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
               <Typography className={text.subtitle2}> Von Uberall an jedem Ort.</Typography>
             </Grid>
             <Grid item sx={{backgroundImage: `url(${backgroundTextImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '100%', height: '60vh' }} />
-
           </Grid>
         </div>
       {/* </Container> */}
