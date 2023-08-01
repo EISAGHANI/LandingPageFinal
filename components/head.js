@@ -8,7 +8,7 @@ const HeadComponent = () => (
     <meta charSet="utf-8" />
     {/* Use minimum-scale=1 to enable GPU rasterization */}
     <meta
-      name="description"
+      name="ButFirstMe"
       content={brand.fashion.desc}
     />
     {/* Favicon */}

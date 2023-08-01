@@ -106,31 +106,31 @@ function Landing(props) {
           {/* <section id="all-new" className={classes.spaceTop}>
             <NewProducts />
           </section> */}
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide1">
             <Benefit />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide2" className={classes.spaceTop}>
             <NewSlide2 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide3" className={classes.spaceTop}>
             <NewSlide3 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide4" className={classes.spaceTop}>
             <NewSlide4 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide5" className={classes.spaceTop}>
             <NewSlide5 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide6" className={classes.spaceTop}>
             <NewSlide6 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide7" className={classes.spaceTop}>
             <NewSlide7 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide8" className={classes.spaceTop}>
             <NewSlide8 />
           </section>
-          <section id="all-new" className={classes.spaceTop}>
+          <section id="slide9" className={classes.spaceTop}>
             <NewSlide9 />
           </section>
           {/* <section id="trending" className={classes.spaceTop}>
