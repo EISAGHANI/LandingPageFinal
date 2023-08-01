@@ -7,7 +7,7 @@ module.exports = {
     logoText: 'But First Me',
     projectName: 'BFM',
     url: 'ButFirstMe.de',
-    img: '/static/images/main-BFM-logo.png',
+    img: '/public/favicon.ico',
     notifMsg: 'Contact us Directly for any assistance.'
   }
 };

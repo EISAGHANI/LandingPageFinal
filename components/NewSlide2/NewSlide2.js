@@ -11,6 +11,7 @@ import imgAPI from '~/public/images/imgAPI';
 import { useText } from '~/theme/common';
 import useStyles from './benefit-style';
 import emailIconRed from '~/public/images/Email-red-outline.svg';
+import backgroundBlock from '~/public/slide2/backgroundBlockSlide2.svg';
 
 function NewSlide2() {
   const { classes } = useStyles();
@@ -32,27 +33,29 @@ function NewSlide2() {
           <div className={classes.parallaxProps} />
         </Parallax>
       </div>
-      <Container fixed={isDesktop}>
+      {/* <Container fixed={isDesktop}> */}
         <div className={classes.wrapper}>
           <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
               <Typography className={text.subtitle2}> Von Uberall an jedem Ort.</Typography>
             </Grid>
+          </Grid>
+          <Grid container direction="column" justifyContent="center" alignItems="flex-end" rowSpacing={8}>
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2}> JETZT KOSTENLOS ANMELDEN</Typography>
-              <Typography className={text.subtitle2}> UND 20% RABATT SICHERN!</Typography>
+              <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '100%', height: '50vh' }} />
             </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
+
+          </Grid>
+          <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Grid item>
-              <Typography className={text.subtitle2}> But First Me - Weil du es wert bist.</Typography>
-              <Typography className={text.subtitle2}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
-              <Typography className={text.subtitle2}> Premium-Mitgliedschaft im ersten Monat!</Typography>
+              <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
             </Grid>
+            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '60%', height: '10vh' }} />
           </Grid>
         </div>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }
