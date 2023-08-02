@@ -31,7 +31,7 @@ const footerStyles = makeStyles({ uniqId: 'footer' })(theme => ({
   logo: {
     marginBottom: theme.spacing(3),
     '& img': {
-      width: 70,
+      width: 180,
     }
   },
   subscribe: {

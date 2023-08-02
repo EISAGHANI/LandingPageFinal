@@ -318,5 +318,21 @@ module.exports = {
         contrastText: '#fff',
       },
     },
+  },
+  branding: {
+    palette: {
+      primary: {
+        light: '#0e4062',
+        main: '#0e4062',
+        dark: '#0e4062',
+        contrastText: '#0e4062',
+      },
+      secondary: {
+        light: '#ccb0b0',
+        main: '#E5281E',
+        dark: '#3e2723',
+        contrastText: '#fff',
+      },
+    },
   }
 };

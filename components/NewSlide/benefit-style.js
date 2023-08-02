@@ -10,22 +10,17 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
  
   wrapper: {
     position: 'relative',
-    minHeight: '87vh'
-    // paddingTop: theme.spacing(10),
-    // marginBottom: theme.spacing(70),
-    // marginTop: theme.spacing(0),
-    // width: '100%',
-    // [theme.breakpoints.up('lg')]: {
-    //   paddingLeft: theme.spacing(8),
-    //   paddingRight: theme.spacing(8)
-    // },
-    // [theme.breakpoints.up('sm')]: {
-    //   paddingLeft: theme.spacing(4),
-    //   paddingRight: theme.spacing(4)
-    // }
+    minHeight: '90vh',
+    [theme.breakpoints.up('lg')]: {
+      paddingLeft: theme.spacing(8),
+      paddingRight: theme.spacing(8)
+    },
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(4),
+    }
   },
   desc: {
-    // padding: 0,
     color: theme.palette.common.white,
     '& h4': {
       fontWeight: theme.typography.fontWeightMedium

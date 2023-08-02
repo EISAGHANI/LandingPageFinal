@@ -3,13 +3,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/fashion-logo.svg';
+import logo from '~/public/images/main-BFM-logo.svg';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
-import menu from '../Header/menu';
 import useStyles from './footer-style';
 
 function Copyright() {
@@ -28,6 +26,18 @@ function Footer() {
   const { t } = useTranslation('common');
   function handleChange(event) {
     setValue(event.target.value);
+  }
+  function isValidEmail(email) {
+    // Regular expression to match a valid email format
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  }
+  function handleSubscribe() {
+    if (isValidEmail(value)) {
+      alert('Thank You for subscribing!');
+    } else {
+      alert('Please enter a valid email address.');
+    }
   }
 
   return (
@@ -50,23 +60,12 @@ function Footer() {
                 onChange={(e) => handleChange(e)}
                 value={value}
               />
-              <Button className={classes.button}>
+              <Button className={classes.button} onClick={handleSubscribe}>
                 {t('fashion-landing.subscribe_button')}
               </Button>
             </form>
           </div>
         </div>
-        <nav>
-          <ul>
-            {menu.map((item, index) => (
-              <li key={index.toString()}>
-                <Link href={'#' + item} variant="subtitle1">
-                  {t('fashion-landing.header_' + item)}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
         <div className={classes.socmed}>
           <IconButton aria-label="FB" className={classes.icon} size="small">
             <i className="ion-logo-twitter" />

@@ -6,11 +6,11 @@ import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { Parallax } from 'react-parallax';
 import { useTranslation } from 'next-i18next';
-import { Icon } from '@mui/material';
 import imgAPI from '~/public/images/imgAPI';
-import { useText , useTextAlign} from '~/theme/common';
+import { useText } from '~/theme/common';
 import useStyles from './benefit-style';
 import emailIconRed from '~/public/images/Email-red-outline.svg';
+import palette from '../../theme/palette';
 
 function Benefit() {
   const { classes } = useStyles();
@@ -33,34 +33,28 @@ function Benefit() {
         </Parallax>
       </div>
       <Container fixed={isDesktop}>
-        <div className={classes.wrapper}>
-          <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
-            <Grid item>
-              <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2}> Von Uberall an jedem Ort.</Typography>
-            </Grid>
-            <Grid item>
-              <Typography className={text.subtitle2} > DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-              <Typography className={text.subtitle2} > JETZT KOSTENLOS ANMELDEN</Typography>
-              <Typography className={text.subtitle2} > UND 20% RABATT SICHERN!</Typography>
-            </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
-            <Grid item>
-              <Typography className={text.subtitle2}> But First Me - Weil du es wert bist.</Typography>
-              <Typography className={text.subtitle2}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
-              <Typography className={text.subtitle2}> Premium-Mitgliedschaft im ersten Monat!</Typography>
-            </Grid>
+      <div className={classes.wrapper}>
+        <Grid container direction="column" justifyContent="center" alignItems="center" rowSpacing={6}>
+          <Grid item>
+            <Typography className={text.subtitle} sx={{ color: palette.branding.palette.primary.main }}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
+            <Typography className={text.subtitle} sx={{ color: palette.branding.palette.primary.main }}> Von Uberall an jedem Ort.</Typography>
           </Grid>
-        </div>
+          <Grid item>
+            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
+            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> JETZT KOSTENLOS ANMELDEN</Typography>
+            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> UND 20% RABATT SICHERN!</Typography>
+          </Grid>
+          <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
+          <Grid item>
+            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> But First Me - Weil du es wert bist.</Typography>
+            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
+            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> Premium-Mitgliedschaft im ersten Monat!</Typography>
+          </Grid>
+        </Grid>
+      </div>
       </Container>
     </div>
   );
 }
 
 export default Benefit;
-
-
-
-
-
-

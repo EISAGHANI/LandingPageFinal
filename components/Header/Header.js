@@ -89,7 +89,7 @@ function Header(props) {
         <Container fixed={isDesktop}>
           <div className={classes.headerContent}>
             <nav className={cx(classes.navMenu, invert && classes.invert)}>
-              { isMobile && (
+              {/* { isMobile && (
                 <IconButton
                   onClick={handleOpenDrawer}
                   className={cx('hamburger hamburger--squeeze', classes.mobileMenu, openDrawer && 'is-active')}
@@ -99,7 +99,7 @@ function Header(props) {
                     <span className={cx(classes.bar, 'hamburger-inner')} />
                   </span>
                 </IconButton>
-              )}
+              )} */}
               <div className={classes.logo}>
                 {invert ? (
                   <Link href={curLang + linkRouter.fashion.home}>
@@ -111,7 +111,7 @@ function Header(props) {
                   </AnchorLink>
                 )}
               </div>
-              {isDesktop && (
+              {/* {isDesktop && (
                 <Scrollspy
                   items={navMenu}
                   currentClassName="active"
@@ -132,7 +132,7 @@ function Header(props) {
                     </li>
                   ))}
                 </Scrollspy>
-              )}
+              )} */}
             </nav>
             <nav className={invert ? classes.invert : ''}>
               <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} />
