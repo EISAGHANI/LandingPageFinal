@@ -10,7 +10,7 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
  
   wrapper: {
     position: 'relative',
-    minHeight: '80vh'
+    minHeight: '78vh'
     // paddingTop: theme.spacing(10),
     // marginBottom: theme.spacing(70),
     // marginTop: theme.spacing(0),

@@ -109,28 +109,28 @@ function Landing(props) {
           <section id="slide1">
             <Benefit />
           </section>
-          <section id="slide2" className={classes.spaceTop}>
+          <section id="slide2">
             <NewSlide2 />
           </section>
-          <section id="slide3" className={classes.spaceTop}>
+          <section id="slide3" >
             <NewSlide3 />
           </section>
-          <section id="slide4" className={classes.spaceTop}>
+          <section id="slide4">
             <NewSlide4 />
           </section>
-          <section id="slide5" className={classes.spaceTop}>
+          <section id="slide5">
             <NewSlide5 />
           </section>
-          <section id="slide6" className={classes.spaceTop}>
+          <section id="slide6">
             <NewSlide6 />
           </section>
-          <section id="slide7" className={classes.spaceTop}>
+          <section id="slide7">
             <NewSlide7 />
           </section>
-          <section id="slide8" className={classes.spaceTop}>
+          <section id="slide8">
             <NewSlide8 />
           </section>
-          <section id="slide9" className={classes.spaceTop}>
+          <section id="slide9">
             <NewSlide9 />
           </section>
           {/* <section id="trending" className={classes.spaceTop}>
@@ -152,7 +152,7 @@ function Landing(props) {
             <Feature />
           </section> */}
         </main>
-        <section id="footer" className={classes.spaceTop}>
+        <section id="footer">
           <Footer />
         </section>
         {!isTablet && (

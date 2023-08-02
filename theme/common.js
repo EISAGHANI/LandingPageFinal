@@ -80,7 +80,8 @@ export const useText = makeStyles({ uniqId: 'text' })(theme => ({
   paragraph: {
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: 16,
-    lineHeight: '24px'
+    lineHeight: '24px',
+    
   },
   caption: {
     fontWeight: theme.typography.fontWeightRegular,
