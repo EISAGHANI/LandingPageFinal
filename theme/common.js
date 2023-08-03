@@ -60,7 +60,7 @@ export const useText = makeStyles({ uniqId: 'text' })(theme => ({
       lineHeight: '36px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
+      fontSize: 10,
       lineHeight: '28px',
     },
   },
@@ -73,7 +73,7 @@ export const useText = makeStyles({ uniqId: 'text' })(theme => ({
       lineHeight: '32px',
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
+      fontSize: 10,
       lineHeight: '24px',
     },
   },
@@ -81,7 +81,14 @@ export const useText = makeStyles({ uniqId: 'text' })(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: 16,
     lineHeight: '24px',
-    
+    [theme.breakpoints.down('lg')]: {
+      fontSize: 16,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 8,
+      lineHeight: '14px',
+    },
   },
   caption: {
     fontWeight: theme.typography.fontWeightRegular,

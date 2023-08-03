@@ -24,34 +24,93 @@ function Benefit() {
   return (
     <div className={classes.root}>
       <div className={classes.parallaxWrap}>
-        <Parallax
-          bgImage={imgAPI.fashion[5]}
-          bgImageAlt="benefit"
-          strength={0}
-        >
+        <Parallax bgImage={imgAPI.fashion[5]} bgImageAlt="benefit" strength={0}>
           <div className={classes.parallaxProps} />
         </Parallax>
       </div>
       <Container fixed={isDesktop}>
-      <div className={classes.wrapper}>
-        <Grid container direction="column" justifyContent="center" alignItems="center" rowSpacing={6}>
-          <Grid item>
-            <Typography className={text.subtitle} sx={{ color: palette.branding.palette.primary.main }}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-            <Typography className={text.subtitle} sx={{ color: palette.branding.palette.primary.main }}> Von Uberall an jedem Ort.</Typography>
+        <div className={classes.wrapper}>
+          <Grid
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            rowSpacing={isMobile ? 2 : 6}
+          >
+            <Grid item>
+              <Typography
+                className={text.subtitle}
+                sx={{ color: palette.branding.palette.primary.main }}
+              >
+                {' '}
+                DEIN VIRTUELLER-MENTALTRAINER.
+              </Typography>
+              <Typography
+                className={text.subtitle}
+                sx={{ color: palette.branding.palette.primary.main }}
+              >
+                {' '}
+                Von Uberall an jedem Ort.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                className={text.subtitle2}
+                sx={{ color: palette.branding.palette.secondary.main }}
+              >
+                {' '}
+                DEIN VIRTUELLER-MENTALTRAINER.
+              </Typography>
+              <Typography
+                className={text.subtitle2}
+                sx={{ color: palette.branding.palette.secondary.main }}
+              >
+                {' '}
+                JETZT KOSTENLOS ANMELDEN
+              </Typography>
+              <Typography
+                className={text.subtitle2}
+                sx={{ color: palette.branding.palette.secondary.main }}
+              >
+                {' '}
+                UND 20% RABATT SICHERN!
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              sx={{
+                backgroundImage: `url(${emailIconRed})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain',
+                width: isMobile ? '50%' : '25%',
+                margin: '5px',
+              }}
+            />
+            <Grid item>
+              <Typography
+                className={text.paragraph}
+                sx={{ color: palette.branding.palette.primary.main }}
+              >
+                {' '}
+                But First Me - Weil du es wert bist.
+              </Typography>
+              <Typography
+                className={text.paragraph}
+                sx={{ color: palette.branding.palette.primary.main }}
+              >
+                {' '}
+                Starke deine Psyche und sichere dir 20% Rabatt auf
+              </Typography>
+              <Typography
+                className={text.paragraph}
+                sx={{ color: palette.branding.palette.primary.main }}
+              >
+                {' '}
+                Premium-Mitgliedschaft im ersten Monat!
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid item>
-            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
-            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> JETZT KOSTENLOS ANMELDEN</Typography>
-            <Typography className={text.subtitle2} sx={{ color: palette.branding.palette.secondary.main }}> UND 20% RABATT SICHERN!</Typography>
-          </Grid>
-          <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '25%', margin: '5px' }} />
-          <Grid item>
-            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> But First Me - Weil du es wert bist.</Typography>
-            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> Starke deine Psyche und sichere dir 20% Rabatt auf</Typography>
-            <Typography className={text.pragraph} sx={{ color: palette.branding.palette.primary.main }}> Premium-Mitgliedschaft im ersten Monat!</Typography>
-          </Grid>
-        </Grid>
-      </div>
+        </div>
       </Container>
     </div>
   );

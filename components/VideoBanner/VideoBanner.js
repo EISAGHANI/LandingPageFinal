@@ -89,7 +89,7 @@ function Banner() {
       <div className={classes.video}>
         <div className={classes.overlay} />
         {!play || isMobile ? <img src={imgAPI.fashion[0]} alt="cover" /> : null}
-        {yt.use && !isMobile && (
+        {yt.use && (
           <YouTube
             videoId="DxIDKZHW3-E"
             opts={opts}
@@ -100,8 +100,8 @@ function Banner() {
         )}
         <div className={classes.caption}>
           <Container maxWidth="md">
-            {play && !isMobile && (
-              <IconButton className={classes.btnPlay} onClick={_onTogglePause} size="large">
+            {play && (
+              <IconButton className={classes.btnPlay} onClick={_onTogglePause} size={isMobile ? 'small' : 'large'}>
                 {playCtrl ? <i className="ion-ios-pause-outline" /> : <i className="ion-ios-play-outline" />}
               </IconButton>
             )}

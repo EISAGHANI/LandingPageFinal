@@ -7,7 +7,6 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
     position: 'relative',
     background: theme.palette.common.black,
   },
- 
   wrapper: {
     position: 'relative',
     minHeight: '90vh',
@@ -21,6 +20,7 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
     }
   },
   desc: {
+    // padding: 0,
     color: theme.palette.common.white,
     '& h4': {
       fontWeight: theme.typography.fontWeightMedium
@@ -63,13 +63,15 @@ const benefitStyles = makeStyles({ uniqId: 'benefit' })(theme => ({
     top: 0,
     left: 0,
     width: '100%',
-    height: '100%',
   },
   parallaxProps: {
     background: `url(${decoBenefit}) no-repeat center`,
     backgroundSize: 'cover',
     height: 580,
     width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      height: 250, // Adjust the height for mobile screens
+    },
   },
 }));
 

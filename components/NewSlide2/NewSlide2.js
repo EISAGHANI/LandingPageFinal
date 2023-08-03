@@ -18,9 +18,9 @@ function NewSlide2() {
   const { classes: text } = useText();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-//   const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
-//   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-//   const { t } = useTranslation('common');
+  const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  // const { t } = useTranslation('common');
 
   return (
     <div className={classes.root}>
@@ -44,7 +44,7 @@ function NewSlide2() {
           <Grid container direction="column" justifyContent="center" alignItems="flex-end" rowSpacing={8}>
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER. Here are</Typography>
-              <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '100%', height: '50vh' }} />
+              <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '50%' : '25%', height: '50vh' }} />
             </Grid>
 
           </Grid>
@@ -52,7 +52,7 @@ function NewSlide2() {
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
             </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '60%', height: '10vh' }} />
+            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '50%' : '25%', height: '10vh' }} />
           </Grid>
         </div>
       {/* </Container> */}
