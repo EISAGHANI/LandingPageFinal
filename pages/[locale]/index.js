@@ -3,34 +3,34 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { makeStyles } from 'tss-react/mui';
 import CssBaseline from '@mui/material/CssBaseline';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 // Use this below for Server Side Render/Translation (SSR)
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // Use this below for Static Site Generation (SSG)
 import { getStaticPaths, makeStaticProps } from '~/lib/getStatic';
 import brand from '~/public/text/brand';
-import Notification from '~/components/Notification';
-import Header from '~/components/Header';
+// import Notification from '~/components/Notification';
+// import Header from '~/components/Header';
 import VideoBanner from '~/components/VideoBanner';
-import Promotions from '~/components/Promotions';
-import NewProducts from '~/components/NewProducts';
-import Trending from '~/components/Trending';
-import Categories from '~/components/Categories';
-import FeaturedProducts from '~/components/FeaturedProducts';
-import Testimonials from '~/components/Testimonials';
-import Blog from '~/components/Blog';
-import Feature from '~/components/Feature';
-import Footer from '~/components/Footer';
-import PageNav from '~/components/PageNav';
-import Benefit from '~/components/NewSlide/NewSlide1';
-import NewSlide2 from '../../components/NewSlide2/NewSlide2';
-import NewSlide9 from '../../components/NewSlide9/NewSlide9';
-import NewSlide8 from '../../components/NewSlide8/NewSlide8';
-import NewSlide7 from '../../components/NewSlide7/NewSlide7';
-import NewSlide6 from '../../components/NewSlide6/NewSlide6';
-import NewSlide5 from '../../components/NewSlide5/NewSlide5';
-import NewSlide4 from '../../components/NewSlide4/NewSlide4';
-import NewSlide3 from '../../components/NewSlide3/NewSlide3';
+// import Promotions from '~/components/Promotions';
+// import NewProducts from '~/components/NewProducts';
+// import Trending from '~/components/Trending';
+// import Categories from '~/components/Categories';
+// import FeaturedProducts from '~/components/FeaturedProducts';
+// import Testimonials from '~/components/Testimonials';
+// import Blog from '~/components/Blog';
+// import Feature from '~/components/Feature';
+// import Footer from '~/components/Footer';
+// import PageNav from '~/components/PageNav';
+// import Benefit from '~/components/NewSlide/NewSlide1';
+// import NewSlide2 from '../../components/NewSlide2/NewSlide2';
+// import NewSlide9 from '../../components/NewSlide9/NewSlide9';
+// import NewSlide8 from '../../components/NewSlide8/NewSlide8';
+// import NewSlide7 from '../../components/NewSlide7/NewSlide7';
+// import NewSlide6 from '../../components/NewSlide6/NewSlide6';
+// import NewSlide5 from '../../components/NewSlide5/NewSlide5';
+// import NewSlide4 from '../../components/NewSlide4/NewSlide4';
+// import NewSlide3 from '../../components/NewSlide3/NewSlide3';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
@@ -80,14 +80,14 @@ const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
 
 function Landing(props) {
   const { classes } = useStyles();
-  const { onToggleDark, onToggleDir } = props;
-  const isTablet = useMediaQuery(theme => theme.breakpoints.down('lg'));
+  // const { onToggleDark, onToggleDir } = props;
+  // const isTablet = useMediaQuery(theme => theme.breakpoints.down('lg'));
 
   return (
     <React.Fragment>
       <Head>
         <title>
-          { brand.fashion.name + ' - Home Page' }
+          { brand.fashion.name }
         </title>
       </Head>
       <CssBaseline />
