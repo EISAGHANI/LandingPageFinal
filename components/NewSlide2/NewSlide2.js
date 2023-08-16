@@ -33,7 +33,7 @@ function NewSlide2() {
           <div className={classes.parallaxProps} />
         </Parallax>
       </div>
-      {/* <Container fixed={isDesktop}> */}
+      <Container fixed={isDesktop}>
         <div className={classes.wrapper}>
           <Grid container direction="column" justifyContent="flex-start" alignItems="center" rowSpacing={8}>
             <Grid item>
@@ -44,18 +44,17 @@ function NewSlide2() {
           <Grid container direction="column" justifyContent="center" alignItems="flex-end" rowSpacing={8}>
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER. Here are</Typography>
-              <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '50%' : '25%', height: '50vh' }} />
+              <Grid item sx={{backgroundImage: `url(${backgroundBlock})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '50%' : '25%', height: isMobile ? '15vh' : '50vh' }} />
             </Grid>
-
           </Grid>
           <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Grid item>
               <Typography className={text.subtitle2}> DEIN VIRTUELLER-MENTALTRAINER.</Typography>
             </Grid>
-            <Grid item sx={{backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '50%' : '25%', height: '10vh' }} />
+            <Grid item sx={{ backgroundImage: `url(${emailIconRed})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: isMobile ? '25%' : '25%', height: '5vh' }} />
           </Grid>
         </div>
-      {/* </Container> */}
+      </Container>
     </div>
   );
 }

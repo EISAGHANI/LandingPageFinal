@@ -92,10 +92,10 @@ function Landing(props) {
       </Head>
       <CssBaseline />
       <div className={classes.mainWrap}>
-        <Header
+        {/* <Header
           onToggleDark={onToggleDark}
           onToggleDir={onToggleDir}
-        />
+        /> */}
         <main className={classes.containerWrap}>
           <section id="home">
             <VideoBanner />
@@ -106,7 +106,7 @@ function Landing(props) {
           {/* <section id="all-new" className={classes.spaceTop}>
             <NewProducts />
           </section> */}
-          <section id="slide1">
+          {/* <section id="slide1">
             <Benefit />
           </section>
           <section id="slide2">
@@ -132,11 +132,11 @@ function Landing(props) {
           </section>
           <section id="slide9">
             <NewSlide9 />
-          </section>
+          </section> */}
           {/* <section id="trending" className={classes.spaceTop}>
             <Trending />
-          </section> */}
-          {/* <section id="categories" className={classes.spaceTop}>
+          </section>
+          <section id="categories" className={classes.spaceTop}>
             <Categories />
           </section>
           <section id="featured" className={classes.spaceTopShort}>
@@ -150,15 +150,16 @@ function Landing(props) {
           </section>
           <section id="feature" className={classes.spaceTopShort}>
             <Feature />
-          </section> */}
+          </section>
         </main>
         <section id="footer">
           <Footer />
-        </section>
-        {!isTablet && (
+        </section> */}
+        {/* {!isTablet && (
           <PageNav />
         )}
-        <Notification />
+        <Notification /> */}
+      </main>
       </div>
     </React.Fragment>
   );

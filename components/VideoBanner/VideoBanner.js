@@ -79,8 +79,8 @@ function Banner() {
       controls: 0,
       rel: 0,
       showinfo: 0,
-      mute: 1,
-      origin: 'https://localhost:3005'
+      mute: 0,
+      origin: 'https://butfirstme.de'
     }
   };
 
@@ -88,10 +88,10 @@ function Banner() {
     <div className={classes.root}>
       <div className={classes.video}>
         <div className={classes.overlay} />
-        {!play || isMobile ? <img src={imgAPI.fashion[0]} alt="cover" /> : null}
+        {!play ? <img src={imgAPI.fashion[0]} alt="cover" /> : null}
         {yt.use && (
           <YouTube
-            videoId="DxIDKZHW3-E"
+            videoId="HeL5RuLF9zk"
             opts={opts}
             onReady={_onReady}
             onEnd={_onEnd}
@@ -105,19 +105,19 @@ function Banner() {
                 {playCtrl ? <i className="ion-ios-pause-outline" /> : <i className="ion-ios-play-outline" />}
               </IconButton>
             )}
-            <Typography variant="h6" className={text.subtitle}>
+            {/* <Typography variant="h6" className={text.subtitle}>
               {t('fashion-landing.banner_title')}
             </Typography>
-            <Typography variant="h2" className={text.title}>#ButFirstMe</Typography>
-            <IconButton
+            <Typography variant="h2" className={text.title}>#ButFirstMe</Typography> */}
+            {/* <IconButton
               className={classes.arrow}
               component={LinkBtn}
               offset={100}
               href="#promotions"
               size="large"
-            >
-              <ArrowIcon />
-            </IconButton>
+            > */}
+              {/* <ArrowIcon />
+            </IconButton> */}
           </Container>
         </div>
       </div>
