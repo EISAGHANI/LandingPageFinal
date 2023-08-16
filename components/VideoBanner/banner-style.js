@@ -13,6 +13,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
   },
   video: {
     height: '100%',
+    width: '100%',
     overflow: 'hidden',
     position: 'relative',
     '& img': {

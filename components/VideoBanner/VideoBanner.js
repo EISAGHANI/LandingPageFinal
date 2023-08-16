@@ -98,13 +98,13 @@ function Banner() {
             onPlay={_onPlay}
           />
         )}
-        <div className={classes.caption}>
+        {/* <div className={classes.caption}>
           <Container maxWidth="md">
             {play && (
               <IconButton className={classes.btnPlay} onClick={_onTogglePause} size={isMobile ? 'small' : 'large'}>
                 {playCtrl ? <i className="ion-ios-pause-outline" /> : <i className="ion-ios-play-outline" />}
               </IconButton>
-            )}
+            )} */}
             {/* <Typography variant="h6" className={text.subtitle}>
               {t('fashion-landing.banner_title')}
             </Typography>
@@ -118,8 +118,8 @@ function Banner() {
             > */}
               {/* <ArrowIcon />
             </IconButton> */}
-          </Container>
-        </div>
+          {/* </Container>
+        </div> */}
       </div>
     </div>
   );
